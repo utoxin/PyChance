@@ -11,8 +11,9 @@ class PyChance:
 
 
 if __name__ == '__main__':
-    from pychance import data
-    test_table = data.SimpleTable("foo", ["bar", "baz"])
+    from pychance.data import SimpleTable
+
+    test_table = SimpleTable("foo", ["bar", "baz"])
 
     test = PyChance()
     test.add_table("foo", test_table)
