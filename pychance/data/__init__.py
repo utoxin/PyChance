@@ -1,1 +1,1 @@
-from .simpletable import SimpleTable
+from .simpletable_class import SimpleTable
