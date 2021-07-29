@@ -2,8 +2,9 @@ import random
 
 
 class SimpleTable:
-    def __init__(self, table_name, table_values = None):
+    def __init__(self, table_name, table_values=None, temporary=False):
         self.table_name = table_name
+        self.temporary = temporary
 
         if table_values is not None:
             if isinstance(table_values, list):
