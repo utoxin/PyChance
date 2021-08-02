@@ -12,9 +12,9 @@ class Parser:
             which_list = match.group('list')
 
             if which_list in self.pychance_instance.tables:
-                message = self.simple_list_pattern.sub(self.pychance_instance.tables[which_list].get_value(), message)
+                message = self.simple_list_pattern.sub(self.pychance_instance.tables[which_list].get_value(), message, count=1)
             else:
-                message = self.simple_list_pattern.sub('undefined', message)
+                message = self.simple_list_pattern.sub('undefined', message, count=1)
 
             match = self.simple_list_pattern.search(message)
 

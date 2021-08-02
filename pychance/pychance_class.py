@@ -19,5 +19,5 @@ if __name__ == '__main__':
     test = PyChance()
     test.add_table("foo", test_table)
     test.add_table("bar", test_table2)
-    print(test.parser.parse("This is a [foo] test."))
+    print(test.parser.parse("This is a [foo] test [bar]."))
 
